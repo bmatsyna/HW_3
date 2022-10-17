@@ -96,7 +96,7 @@ print(d)
 d = {}
 for x in range(10):
     if x ** 3 % 4 == 0:
-       d[x] = x**3
+        d[x] = x ** 3
     else:
         d[x] = x
 print(d)
@@ -114,3 +114,15 @@ print(d)
 # foo = lambda x, y, z: z if y < x and x > z else y
 #
 # 18. Convert (7) to lambda function
+lmb_1 = lambda x, y: x if x < y else y
+print(lmb_1(2, 3))
+# 19*. Convert (8) to regular function
+def foo_2(x, y, z):
+    if y < x and x > z:
+        return z
+    else:
+        return y
+
+print(foo_2(10, 8, 7))
+
+# lst_to_sort = [5, 18, 1, 24, 33, 15, 13, 55]
